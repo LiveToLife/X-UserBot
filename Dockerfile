@@ -1,14 +1,14 @@
 FROM teamvaders/hellbot:latest
 
 #clonning repo 
-RUN git clone https://github.com/TheVaders/InVade.git /root/hellbot
+RUN git clone https://github.com/X-USERBOT/X-MAIN.git/root/xbot
 
 #working directory 
-WORKDIR /root/hellbot
+WORKDIR /root/xbot
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
 ENV PATH="/home/userbot/bin:$PATH"
 
-CMD ["python3","-m","hellbot"]
+CMD ["python3","-m","xbot"]
