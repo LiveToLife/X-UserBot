@@ -1,4 +1,4 @@
-FROM X-USERBOT/X-MAIN:latest
+FROM X-USERBOT/xbot:latest
 
 #clonning repo 
 RUN git clone https://github.com/X-USERBOT/X-MAIN.git/root/xbot
