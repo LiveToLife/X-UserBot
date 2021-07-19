@@ -1,4 +1,4 @@
-FROM teamvaders/hellbot:latest
+FROM X-USERBOT/X-MAIN:latest
 
 #clonning repo 
 RUN git clone https://github.com/X-USERBOT/X-MAIN.git/root/xbot
