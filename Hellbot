@@ -4,19 +4,19 @@
 _repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $HELL_REPO == "X-USERBOT" ]]
+    if [[ $X_REPO == "X-USERBOT" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL1gtVVNFUkJPVC9YLU1BSU4vYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
-    elif [[ $HELL_REPO == "X-USERBOT" ]]
+    elif [[ $X_REPO == "X-USERBOT" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL1gtVVNFUkJPVC9YLU1BSU4vYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
-    elif [[ $HELL_REPO =~ $regex ]]
+    elif [[ $X_REPO =~ $regex ]]
     then
-        if [[ $HELL_REPO_BRANCH ]]
+        if [[ $X_REPO_BRANCH ]]
         then
-            echo "${HELL_REPO}/archive/${HELL_REPO_BRANCH}.zip"
+            echo "${X_REPO}/archive/${X_REPO_BRANCH}.zip"
         else
-            echo "${HELL_REPO}/archive/master.zip"
+            echo "${X_REPO}/archive/master.zip"
         fi
     else
         echo "aHR0cHM6Ly9naXRodWIuY29tL1gtVVNFUkJPVC9YLU1BSU4vYXJjaGl2ZS9tYXN0ZXIuemlw" | base64 -d
@@ -26,20 +26,20 @@ _repolink () {
 
 start_bot () {
     local zippath
-    zippath="myhellbot.zip"
+    zippath="myxbot.zip"
     echo "  Downloading source code ..."
     wget -q $(_repolink) -O "$zippath"
     echo "  Unpacking Data ..."
-    HELLPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
+    XPATH=$(zipinfo -1 "$zippath" | grep -v "/.");
     unzip -qq "$zippath"
     echo "  Processing Codes..."
     rm -rf "$zippath"
     sleep 5
-    cd $HELLPATH
+    cd $XPATH
     echo "  • Starting X Bot •  "
 
     python3 ../setup/updater.py ../requirements.txt requirements.txt
-    python3 -m hellbot
+    python3 -m xbot
 }
 
 start_bot
