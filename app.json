@@ -1,7 +1,7 @@
 {
-  "name": "Hêllẞø†",
+  "name": "χ-υѕєявσт",
   "description": "Hêllẞø† is one of the Best UserBot for Telegram. Known for its Smoothness, Design, Support.",
-  "logo": "https://telegra.ph/file/7decf235312af8536e9aa.jpg ",
+  "logo": "https://telegra.ph/file/ae53a9b45f87e9b493241.jpg ",
     "keywords": [
     "telegram",
     "userbot",
@@ -11,9 +11,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/The-HellBot/HellBot/",
-  "website": "https://github.com/The-HellBot/",
-  "success_url": "https://t.me/The_HellBot",
+  "repository": "https://github.com/LiveToLife/X-UserBot/",
+  "website": "https://github.com/LiveToLife/",
+  "success_url": "https://t.me/X_User_Bot",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable heroku.",
@@ -21,7 +21,7 @@
     },
     "YOUR_NAME": {
       "description": "Fill Your Telegram Name. Default Value is Hêll",
-      "value": "『ℌєℓℓ』",
+      "value": "χ-υѕєявσт",
       "required": false
     },
     "ALIVE_MSG": {
@@ -77,7 +77,7 @@
       "description": "Create a private channel. And get it's id from @HELL_ID_BOT and paste here. Value should start with -100",
       "value": ""
     },
-    "HELLBOT_SESSION": {
+    "X-USERBOT_SESSION": {
       "description": "Get this value by using repl or termux. Refer to Repo for more info.",
       "value": ""
     },
