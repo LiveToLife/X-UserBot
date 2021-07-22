@@ -78,7 +78,7 @@
 - Open the terminal.
 - Paste this code.
 
-`pkg install python wget -y && pip install telethon && wget https://raw.githubusercontent.com/TheVaders/InVade/master/xbot_string.py && python3 xbot_string.py`
+`pkg install python wget -y && pip install telethon && wget https://raw.githubusercontent.com/X-USERBOD/X-MAIN/master/xbot_string.py && python3 xbot_string.py`
 - Fill API ID, API HASH, Phone number (with country code).
 - Paste the OTP received on Telegram.
 - If You have Enabled 2-Step Verification then fill your password.
