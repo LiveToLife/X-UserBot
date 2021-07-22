@@ -34,7 +34,7 @@
 `git clone https://github.com/X-USERBOT/X-MAIN.git`
 - Open Cloned Folder.
 
-`cd InVade`
+`cd X-MAIN`
 - Create VirtualEnv.
 
 `virtualenv -p /usr/bin/python3 venv`
@@ -45,7 +45,7 @@
 `pip install -U -r requirements.txt`
 - Generate X SESSION.
 
-`python hell_string.py`
+`python xbot_string.py`
 - Create config.py or rename ex_config.py to config.py. Fill All The Required Variables.
 - Finally Start  χ-υѕєявσт By
 
